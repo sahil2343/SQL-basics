@@ -9,14 +9,14 @@ For dealing with the relational database, there are some queries that are needed
 1. **Data Definition Language (DDL)** :- In relational database, without table structured data, nothing can be done. So, DDL is used to create the structure of the database. Commands for e.g CREATE, ALTER, DROP e.t.c. are used.
 2.  **Data Manipulation Language (DML)** :- It is used to manipulate data in the tables. Commands like SELECT, INSERT, DELETE, UPDATE e.t.c are used.
  _______________________________________
-* Create a table :- CREATE TABLE TABLENAME( variables )
+* **Create a table** :- CREATE TABLE TABLENAME( variables )
 e.g ```CREATE TABLE Employee(Id int, Name varchar(20), Age int)```.
 This command will create a table named Employee:-
-* Alter a table :- ```ALTER TABLE Employee Add(Address varchar(30))```. This command will add a coloumn address to the table.
-* Insert into the table :- ```INSERT INTO Employee 
+* **Alter a table** :- ```ALTER TABLE Employee Add(Address varchar(30))```. This command will add a coloumn address to the table.
+* **Insert into the table** :- ```INSERT INTO Employee 
 VALUES(1, Pankaj, 30, SBP)```
 Insert into the table :- ```INSERT INTO Employee VALUES(4, Roshan, 25, BBSR)```
-* Updating a row :- ```UPDATE Employee SET Age = 26 WHERE Id = 4```
+* **Updating a row** :- ```UPDATE Employee SET Age = 26 WHERE Id = 4```
 
 After all these commands were executed the table will look like :-
 
@@ -30,7 +30,7 @@ Id | Name | Age | Address
 ### What are JOINS?
 Suppose that we need to do a operation where data from more than 1 tables are required, one way to perform these tasks is to use joins. 
 Generally, Join = Cross product (T1 * T2) + some conditions. **There should be **one common field** between them to perform these tasks. Different types of joins are :-
-*  Natural Join :- The NATURAL JOIN keyword select all rows from both the tables as long as the given condition satisfies( value of common field matches). 
+*  **Natural Join** :- The NATURAL JOIN keyword select all rows from both the tables as long as the given condition satisfies( value of common field matches). 
 
 **Emp**
 
@@ -49,7 +49,7 @@ D2|IT|Blr
 D3|MRKT|Pune
 ```SELECT E_name from Emp NATURAL JOIN Dept ```
 This command will return Ram, Varun.
-* Left (Outer) Join :- It returns all record from the left table and also perform the Natural Join to return matched records from the right table.
+* **Left (Outer) Join** :- It returns all record from the left table and also perform the Natural Join to return matched records from the right table.
 ```
 	SELECT E_no, E_name, D_name, Address from Emp LEFT OUTER JOIN Dept ON(Emp.D_no = Dept.D_no)
 ```	
@@ -61,7 +61,7 @@ E_no | E_name | D_name | Address
 2|Varun|IT |Blr
 3|Ravi|HR|Hyd
 4|Amit| -- | --
-* Right (Outer) Join :- It returns all records from right table, and the matched records from the left table.
+* **Right (Outer) Join** :- It returns all records from right table, and the matched records from the left table.
 ```
 	SELECT E_name, E_no, D_name, Address from Emp RIGHT OUTER JOIN Dept ON(Emp.D_no = Dept.D_no)
 ```
