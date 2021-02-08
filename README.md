@@ -35,7 +35,7 @@ Generally, Join = Cross product (T1 * T2) + some conditions. **There should be *
 **Emp**
 
 E_no | E_name | D_no
------- | --------- | ------- | --
+------ | --------- | -------
 1|Ram|D1
 2|Varun|D2
 3|Ravi|D1
