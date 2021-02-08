@@ -40,11 +40,11 @@ Id | Name | Age | Address
 
 ### What are JOINS?
 
-Suppose that we need to do a operation where data from more than 1 tables are required, one way to perform these tasks is to use joins. 
+Suppose that we need to do a operation where data from more than 1 tables are required, one way to perform these tasks is to use joins.
 Generally, Join = Cross product (T1 * T2) + some conditions. **There should be **one common field** between them to perform these tasks. Different types of joins are :-
 
 * **Natural Join** :-
-The NATURAL JOIN keyword select all rows from both the tables as long as the given condition satisfies( value of common field matches). 
+The NATURAL JOIN keyword select all rows from both the tables as long as the given condition satisfies( value of common field matches).
 
 ### Emp
 
@@ -62,6 +62,7 @@ D_no | D_name | Address
 D1|Hr|Hyd
 D2|IT|Blr
 D3|MRKT|Pune
+
 ```SELECT E_name from Emp NATURAL JOIN Dept```
 This command will return Ram, Varun.
 
