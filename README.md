@@ -35,7 +35,6 @@ Id | Name | Age | Address
 1|Pankaj|30|SBP
 4|Roshan|26|BBSR
 
-
 ## JOINS IN SQL
 
 ### What are JOINS?
@@ -112,3 +111,8 @@ Returns the sum of value that is specified. For e.g. ```SELECT SUM(marks) FROM S
 * Min( ) :- Returns the minimum value of a certain column. For e.g ```SELECT MIN(marks) FROM Student```.
 * Max( ) :- Returns the maximum value of a certain column. For e.g. ```SELECT MAX(marks) FROM Student```.
 * Count( ) :- Returns the count of number of rows. For e.g ```SELECT COUNT(*) FROM Student```. This will return count of all rows in Student table as (*) is used for all.
+
+## References
+
+* https://www.javatpoint.com/sql-tutorial
+* https://www.w3schools.com/sql/sql_join.asp
